@@ -43,7 +43,6 @@ nav a:hover{
     padding: 50px;
 }
 
-
 .productos li{
     display: inline-block;
     text-align: center;
@@ -247,7 +246,7 @@ td, th{
 }
 
 .items::before{
-    content: "🟊 ";
+    content: "\2605";
 }
 
 .items:first-child{
@@ -276,11 +275,19 @@ td, th{
     nav{
         position: static;
     }
+    
+    .principal p, .lista-diferenciales{
+        margin: 0;
+        padding: 0 0 1em 1em;  
+    }
     .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
         width: auto;        
     }
     .lista-diferenciales, .imagen-diferenciales{
         width: 100%;
+    }
+    .items:last-child{
+        margin: 0 0 20px 0;
     }
     
     /* PAGINA CONTACTO */ 
@@ -294,7 +301,6 @@ td, th{
         width: 80%;
         margin: 0 0 0 20px ;
     }
-
 
     table{
         margin: 40px;
